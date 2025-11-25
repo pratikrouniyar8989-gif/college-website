@@ -3,348 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions - ISMT British College</title>
+    <title>Admissions · ISMT British College</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="ISMT Logo" height="50">
+                <img src="images/logo.png" alt="ISMT Logo">
                 ISMT British College
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="admissions.html">Admissions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="ms-3">
-                    <a href="admissions.html" class="btn btn-light">Apply Now</a>
-                </div>
+                <a href="admissions.html" class="ms-lg-3 apply-pill d-inline-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Apply
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="overlay"></div>
+    <header class="page-hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Admissions</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Admissions</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+            <p class="pill">Admissions</p>
+            <h1>We built a calm, transparent admissions journey that mirrors our studio culture.</h1>
+            <p>Whether you are transferring credits, applying straight after high school, or returning for graduate study, the admissions team co-designs a path that fits your goals.</p>
         </div>
     </header>
 
-    <!-- Admissions Process Section -->
-    <section class="py-5">
+    <section>
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Admissions Process</h2>
-                    <p class="lead">ISMT British College welcomes applications from students who are passionate about learning and ready to embark on an international educational journey. Our admissions process is designed to be straightforward and supportive.</p>
-                </div>
+            <div class="section-heading">
+                <span>Journey</span>
+                <h2>Four deliberate steps from application to onboarding.</h2>
             </div>
+            <div class="admission-grid">
+                <article class="step-card">
+                    <span class="tag">01 · Share your story</span>
+                    <h3>Application & portfolio</h3>
+                    <p class="muted">Submit your transcripts, statement of intent, and optional creative or technical work. Tell us what you want to build.</p>
+                </article>
+                <article class="step-card">
+                    <span class="tag">02 · Aptitude</span>
+                    <h3>Studio challenge</h3>
+                    <p class="muted">Depending on the program, complete a short problem-solving task or entrance quiz. We look for curiosity, not perfection.</p>
+                </article>
+                <article class="step-card">
+                    <span class="tag">03 · Dialogue</span>
+                    <h3>Conversation + review</h3>
+                    <p class="muted">Meet faculty and career leads for a conversation about your goals. Documents are verified in parallel.</p>
+                </article>
+                <article class="step-card">
+                    <span class="tag">04 · Welcome</span>
+                    <h3>Offer & onboarding</h3>
+                    <p class="muted">Receive a personalized study map, scholarship decision, and onboarding kit. Orientation begins 4 weeks before classes.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <div class="row mb-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="admission-process">
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-file-alt"></i>
-                                <span class="step-number">1</span>
-                            </div>
-                            <div class="process-content">
-                                <h4>Application Submission</h4>
-                                <p>Complete and submit the application form along with required documents including academic transcripts, identification proof, and passport-sized photographs.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-edit"></i>
-                                <span class="step-number">2</span>
-                            </div>
-                            <div class="process-content">
-                                <h4>Entrance Exam</h4>
-                                <p>Depending on the program, applicants may need to take an entrance exam to assess their aptitude and readiness for the chosen course.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-comments"></i>
-                                <span class="step-number">3</span>
-                            </div>
-                            <div class="process-content">
-                                <h4>Interview & Document Verification</h4>
-                                <p>Shortlisted candidates will be invited for an interview. Original documents will be verified during this stage.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="process-icon">
-                                <i class="fas fa-envelope-open-text"></i>
-                                <span class="step-number">4</span>
-                            </div>
-                            <div class="process-content">
-                                <h4>Offer Letter & Enrollment</h4>
-                                <p>Successful applicants will receive an offer letter. Upon acceptance and payment of the initial fees, students will be officially enrolled in their chosen program.</p>
-                            </div>
-                        </div>
+    <section>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <span class="pill">Eligibility</span>
+                    <h2>Who we’re looking for.</h2>
+                    <p class="muted">We welcome ambitious learners from Nepal and abroad. The table below summarizes key requirements.</p>
+                    <div class="values-grid">
+                        <article class="value-card">
+                            <h3>Undergraduate</h3>
+                            <ul class="muted">
+                                <li>10+2 / A Levels with at least 60% aggregate.</li>
+                                <li>Strong foundation in Math/English for tech programs.</li>
+                                <li>IELTS 6.0 or equivalent for international applicants.</li>
+                            </ul>
+                        </article>
+                        <article class="value-card">
+                            <h3>Postgraduate</h3>
+                            <ul class="muted">
+                                <li>Bachelor’s degree with minimum 50%.</li>
+                                <li>Professional experience preferred for MBA.</li>
+                                <li>IELTS 6.5 or equivalent for international applicants.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div>
+                    <span class="pill">Checklist</span>
+                    <h2>Documents to keep handy.</h2>
+                    <div class="checklist">
+                        <div class="check-pill">Transcripts & mark sheets</div>
+                        <div class="check-pill">Citizenship/Passport copy</div>
+                        <div class="check-pill">Passport photos</div>
+                        <div class="check-pill">English proficiency proof</div>
+                        <div class="check-pill">CV / resume (PG)</div>
+                        <div class="check-pill">Statement of intent</div>
+                        <div class="check-pill">Portfolio / work samples (optional)</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Eligibility Criteria Section -->
-    <section class="bg-light py-5">
+    <section>
         <div class="container">
-            <h2 class="section-title text-center mb-5">Eligibility Criteria</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 eligibility-card">
-                        <div class="card-header bg-primary text-white">
-                            <h4 class="m-0">Undergraduate Programs</h4>
-                        </div>
-                        <div class="card-body">
-                            <ul class="eligibility-list">
-                                <li>Completion of Higher Secondary Education (10+2) or equivalent</li>
-                                <li>Minimum 60% aggregate marks in Science/Commerce/Management stream</li>
-                                <li>Proficiency in English language (IELTS 6.0 or equivalent for international students)</li>
-                                <li>Successful completion of the ISMT entrance exam and interview</li>
-                            </ul>
-                            <h5 class="mt-4">Required Documents</h5>
-                            <ul class="eligibility-list">
-                                <li>Completed application form</li>
-                                <li>Academic transcripts and certificates</li>
-                                <li>Copy of citizenship/passport</li>
-                                <li>Passport-sized photographs</li>
-                                <li>English language proficiency certificate (if applicable)</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="grid-2">
+                <div>
+                    <span class="pill">Scholarships</span>
+                    <h2>We reward bold ideas and community impact.</h2>
+                    <p class="muted">Merit, women-in-tech, and community impact scholarships cover up to 70% tuition. Submit a two-minute video or concept note outlining the impact you hope to make.</p>
+                    <ul class="muted">
+                        <li>Merit: Based on academic excellence + studio challenge.</li>
+                        <li>Women-in-Tech: For women pursuing STEM majors.</li>
+                        <li>Impact: For projects tackling local challenges.</li>
+                    </ul>
+                    <a href="contact.html" class="btn-ghost mt-3">Ask about scholarships</a>
                 </div>
-                <div class="col-md-6">
-                    <div class="card h-100 eligibility-card">
-                        <div class="card-header bg-primary text-white">
-                            <h4 class="m-0">Postgraduate Programs</h4>
-                        </div>
-                        <div class="card-body">
-                            <ul class="eligibility-list">
-                                <li>Bachelor's degree with minimum 50% aggregate marks</li>
-                                <li>Relevant work experience (preferred but not mandatory)</li>
-                                <li>Proficiency in English language (IELTS 6.5 or equivalent for international students)</li>
-                                <li>Successful completion of the ISMT entrance exam and interview</li>
-                            </ul>
-                            <h5 class="mt-4">Required Documents</h5>
-                            <ul class="eligibility-list">
-                                <li>Completed application form</li>
-                                <li>Academic transcripts and certificates (Bachelor's degree)</li>
-                                <li>Copy of citizenship/passport</li>
-                                <li>Passport-sized photographs</li>
-                                <li>CV/Resume</li>
-                                <li>Work experience letters (if applicable)</li>
-                                <li>English language proficiency certificate (if applicable)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Application Form Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Apply Online</h2>
-                    <p class="lead">Fill out the form below to start your application process. Our admissions team will contact you shortly.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card shadow">
-                        <div class="card-body p-4">
-                            <form id="applicationForm">
-                                <div class="row mb-3">
-                                    <div class="col-md-6 mb-3 mb-md-0">
-                                        <label for="firstName" class="form-label">First Name*</label>
-                                        <input type="text" class="form-control" id="firstName" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="lastName" class="form-label">Last Name*</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
+                <div>
+                    <span class="pill">Apply online</span>
+                    <div class="form-shell">
+                        <form id="applicationForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First name*</label>
+                                    <input type="text" id="firstName" class="form-control" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address*</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last name*</label>
+                                    <input type="text" id="lastName" class="form-control" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone Number*</label>
-                                    <input type="tel" class="form-control" id="phone" required>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email*</label>
+                                    <input type="email" id="email" class="form-control" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="program" class="form-label">Program of Interest*</label>
-                                    <select class="form-select" id="program" required>
-                                        <option value="" selected disabled>Select a program</option>
-                                        <option value="bsc-computer">BSc (Hons) Computer Systems Engineering</option>
-                                        <option value="bsc-cyber">BSc (Hons) Cyber Security and Digital Forensics</option>
-                                        <option value="ba-business">BA (Hons) Business and Management</option>
-                                        <option value="bsc-tourism">BSc (Hons) International Tourism and Hospitality Management</option>
-                                        <option value="mba">Master of Business Administration (MBA)</option>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone*</label>
+                                    <input type="tel" id="phone" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="program" class="form-label">Program*</label>
+                                    <select id="program" class="form-select" required>
+                                        <option value="">Select</option>
+                                        <option value="bsc-computer">BSc Computer Systems Engineering</option>
+                                        <option value="bsc-cyber">BSc Cyber Security & Digital Forensics</option>
+                                        <option value="ba-business">BA Business & Innovation</option>
+                                        <option value="bsc-hospitality">BSc Tourism & Hospitality Leadership</option>
+                                        <option value="mba">MBA Global Innovation</option>
                                     </select>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="education" class="form-label">Highest Education Qualification*</label>
-                                    <select class="form-select" id="education" required>
-                                        <option value="" selected disabled>Select your highest qualification</option>
-                                        <option value="high-school">High School (10th)</option>
-                                        <option value="higher-secondary">Higher Secondary (10+2)</option>
-                                        <option value="bachelors">Bachelor's Degree</option>
-                                        <option value="masters">Master's Degree</option>
+                                <div class="col-md-6">
+                                    <label for="education" class="form-label">Highest qualification*</label>
+                                    <select id="education" class="form-select" required>
+                                        <option value="">Select</option>
+                                        <option value="highschool">High School</option>
+                                        <option value="higher-secondary">Higher Secondary</option>
+                                        <option value="bachelors">Bachelor’s Degree</option>
+                                        <option value="masters">Master’s Degree</option>
                                     </select>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Additional Information</label>
-                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Tell us about your goals</label>
+                                    <textarea id="message" class="form-control" rows="4" placeholder="Optional"></textarea>
                                 </div>
-                                <div class="mb-3 form-check">
+                                <div class="col-12 form-check mt-2">
                                     <input type="checkbox" class="form-check-input" id="termsCheck" required>
-                                    <label class="form-check-label" for="termsCheck">I agree to the terms and conditions and consent to the processing of my personal data.</label>
+                                    <label class="form-check-label" for="termsCheck">I agree to the admissions policy.</label>
                                 </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary w-100">Submit application</button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Downloads Section -->
-    <section class="bg-light py-5">
+    <section>
         <div class="container">
-            <h2 class="section-title text-center mb-5">Downloads</h2>
+            <div class="cta-banner">
+                <p class="text-uppercase text-muted mb-2">Need clarity?</p>
+                <h2>Download the admissions kit or speak with an advisor within 24 hours.</h2>
+                <p class="muted mb-4">Includes fee guides, visa support info, and scholarship briefs.</p>
+                <a href="contact.html" class="btn-primary">Speak to admissions</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card download-card text-center h-100">
-                        <div class="card-body">
-                            <div class="download-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4>Application Form</h4>
-                            <p>Download the official application form for ISMT British College.</p>
-                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card download-card text-center h-100">
-                        <div class="card-body">
-                            <div class="download-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4>College Brochure</h4>
-                            <p>Comprehensive information about our programs, facilities, and more.</p>
-                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card download-card text-center h-100">
-                        <div class="card-body">
-                            <div class="download-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4>Fee Structure</h4>
-                            <p>Detailed information about tuition fees and payment schedules.</p>
-                            <a href="#" class="btn btn-outline-primary">Download PDF</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section text-white text-center py-5">
-        <div class="container">
-            <h2 class="mb-4">Have Questions About Admissions?</h2>
-            <p class="lead mb-4">Our admissions team is here to help you through every step of the process</p>
-            <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
+                <div class="col-lg-4">
                     <h5>ISMT British College</h5>
-                    <p>Providing quality education and international degrees in Nepal since 2011.</p>
+                    <p>British-validated degrees, Kathmandu-born culture. We design learning experiences for makers, strategists, and storytellers.</p>
                     <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Quick Links</h5>
+                <div class="col-lg-4">
+                    <h5>Navigate</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About Us</a></li>
-                        <li><a href="courses.html" class="text-white">Courses</a></li>
-                        <li><a href="admissions.html" class="text-white">Admissions</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Programs</a></li>
+                        <li><a href="contact.html">Visit & contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
-                    <address>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Kathmandu, Nepal</p>
-                        <p><i class="fas fa-phone me-2"></i> +977 1234567890</p>
-                        <p><i class="fas fa-envelope me-2"></i> info@ismtcollege.edu.np</p>
-                    </address>
+                <div class="col-lg-4">
+                    <h5>Visit</h5>
+                    <p>Kamaladi Marg, Kathmandu 44600 · Nepal</p>
+                    <p>+977 980-1234567</p>
+                    <p>hello@ismtcollege.edu.np</p>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> ISMT British College · Crafted in Kathmandu.
             </div>
         </div>
     </footer>
-    <div class="bg-primary text-white text-center py-3">
-        <div class="container">
-            <p class="m-0">&copy; 2023 ISMT British College. All Rights Reserved.</p>
-        </div>
-    </div>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

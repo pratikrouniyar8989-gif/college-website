@@ -3,217 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISMT British College - Home</title>
+    <title>ISMT British College · Reimagined Campus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo.png" alt="ISMT Logo" height="50" class="me-2">
-                <span class="fw-bold">ISMT British College</span>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="ISMT Logo">
+                ISMT British College
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="admissions.html">Admissions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="primaryNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="ms-3">
-                    <a href="admissions.html" class="btn btn-light btn-sm">Apply Now</a>
-                </div>
+                <a href="admissions.html" class="ms-lg-3 apply-pill d-inline-flex align-items-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Apply
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="overlay"></div>
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-8 text-white text-center text-lg-start">
-                    <h1 class="display-3 fw-bold mb-4">Welcome to ISMT British College</h1>
-                    <p class="lead mb-4">Providing internationally recognized qualifications in Nepal since 2011.</p>
-                    <div class="mt-4">
-                        <a href="about.html" class="btn btn-light btn-lg me-3">Learn More</a>
-                        <a href="admissions.html" class="btn btn-outline-light btn-lg">Apply Now</a>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-headline">
+                        <span class="pill"><i class="fa-solid fa-sparkles"></i> Global · Immersive · Bold</span>
+                        <h1>Build future-ready careers from Kathmandu’s most global campus.</h1>
+                        <p>Studios, strategy labs, and mentorship from the University of Sunderland power every credit you earn. We blend British rigor with Himalayan energy for students who want to design meaningful products, services, and ventures.</p>
+                        <div class="hero-cta">
+                            <a href="about.html" class="btn-primary">Book a campus tour</a>
+                            <a href="courses.html" class="btn-ghost">Browse programs</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <span class="counter" data-target="1800">0</span>
+                                Students across continents
+                            </div>
+                            <div class="stat-card">
+                                <span class="counter" data-target="32">0</span>
+                                Visiting founders each year
+                            </div>
+                            <div class="stat-card">
+                                <span class="counter" data-target="96">0</span>
+                                Graduate employment rate
+                            </div>
+                            <div class="stat-card">
+                                <span class="counter" data-target="14">0</span>
+                                Immersive studio spaces
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="images/students.jpg" alt="Students collaborating">
+                        <div class="floating-card">
+                            <small class="text-uppercase text-muted">Summer immersion</small>
+                            <h4 class="mb-1">London · Dubai · Singapore</h4>
+                            <p class="mb-0 muted">Experience design sprints with partner labs worldwide.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <!-- Introduction Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h2 class="section-title mb-4">Excellence in Education</h2>
-                    <p class="mb-4">ISMT British College is a premier educational institution established in 2011, offering internationally recognized qualifications in collaboration with the University of Sunderland and Pearson BTEC.</p>
-                    <p class="mb-4">Our mission is to deliver industry-relevant education in Nepal, preparing students for global careers through quality teaching, modern facilities, and practical learning experiences.</p>
-                    <a href="about.html" class="btn btn-primary">Discover More</a>
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <span>Signature Experiences</span>
+                    <h2>Every semester combines studio building, global mentors, and industry briefs.</h2>
+                    <p>ISMT British College has been redesigned around immersive learning loops so you can test, build, and scale ideas with real partners long before graduation.</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/campus.jpg" alt="ISMT Campus" class="img-fluid rounded shadow">
+                <div class="grid-3">
+                    <article class="feature-card">
+                        <span class="tag">Industry studios</span>
+                        <h3>Product foundry weeks</h3>
+                        <p>Cross-disciplinary squads solve live briefs from fintech, hospitality, and impact startups. Ship prototypes in five-day sprint weeks.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="tag">Global immersion</span>
+                        <h3>Dual-city semesters</h3>
+                        <p>Spend part of your year in Sunderland or Dubai while keeping fees locked in Nepal. Credits transfer seamlessly across campuses.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="tag">Career design</span>
+                        <h3>Talent residency</h3>
+                        <p>Dedicated career strategists, mock interviews with alumni, and paid internship pipelines with partner ventures across Asia.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Programs Highlight -->
-    <section class="bg-light py-5">
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <span>Programs</span>
+                    <h2>Choose a major, then layer on tracks in AI, venture strategy, design, or hospitality.</h2>
+                    <p>Each pathway is co-designed with Sunderland faculty and Nepali industry mentors for a portfolio that feels global yet hyper-relevant to Kathmandu.</p>
+                </div>
+                <div class="programs-grid">
+                    <article class="program-card">
+                        <span class="tag">Technology</span>
+                        <h3>BSc (Hons) Computer Systems Engineering</h3>
+                        <p>Cloud-native systems, ethical AI, and automation labs backed by NVIDIA-powered infrastructure.</p>
+                        <div class="program-meta">
+                            <span class="chip">4 Years</span>
+                            <span class="chip">AI + Cyber tracks</span>
+                        </div>
+                        <a href="courses.html" class="text-decoration-underline">View syllabus</a>
+                    </article>
+                    <article class="program-card">
+                        <span class="tag">Business</span>
+                        <h3>BA (Hons) Business & Innovation</h3>
+                        <p>Prototype new ventures, build financial models, and pitch to an investor council every semester.</p>
+                        <div class="program-meta">
+                            <span class="chip">Hybrid delivery</span>
+                            <span class="chip">Mentor board</span>
+                        </div>
+                        <a href="courses.html" class="text-decoration-underline">See modules</a>
+                    </article>
+                    <article class="program-card">
+                        <span class="tag">Hospitality</span>
+                        <h3>BSc (Hons) Tourism & Hospitality Leadership</h3>
+                        <p>Experience design labs, luxury operations simulations, and residencies with partner resorts.</p>
+                        <div class="program-meta">
+                            <span class="chip">Global practicum</span>
+                            <span class="chip">Experience labs</span>
+                        </div>
+                        <a href="courses.html" class="text-decoration-underline">Plan your path</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="grid-2 align-items-center">
+                    <div>
+                        <span class="pill">City campus</span>
+                        <h2>Studios built for makers, strategists, and storytellers.</h2>
+                        <p class="muted">Four floors of immersive labs, XR rooms, and hospitality suites ensure every assignment feels real. Late-night access, production gear, and cloud labs are included in tuition.</p>
+                        <div class="program-meta mt-4">
+                            <span class="chip">Experience Lab</span>
+                            <span class="chip">Collaboration Loft</span>
+                            <span class="chip">Hospitality Suite</span>
+                        </div>
+                    </div>
+                    <div class="mosaic-grid">
+                        <img src="images/campus.jpg" alt="Campus exterior">
+                        <img src="images/library.jpg" alt="Library interior">
+                        <img src="images/classroom.jpg" alt="Innovation classroom">
+                        <img src="images/computer-lab.jpg" alt="Lab">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <span>Stories</span>
+                    <h2>Alumni shaping fintech, luxury hospitality, and climate ventures.</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="story-card">
+                        <p class="quote">“ISMT reimagined assignments into live consulting briefs. I prototyped payments with a UK mentor and now lead launches across three countries.”</p>
+                        <strong>Ritika Sharma · BSc CSE 2021</strong>
+                        <span>Product Manager, Revolut</span>
+                    </article>
+                    <article class="story-card">
+                        <p class="quote">“The hospitality studio feels like a boutique hotel. That realism helped me secure a Dubai residency before graduation.”</p>
+                        <strong>Samir Thapa · BSc Hospitality 2020</strong>
+                        <span>Guest Experience Lead, Marriott International</span>
+                    </article>
+                    <article class="story-card">
+                        <p class="quote">“Sprint weeks gave me founders as mentors. I turned my senior thesis into a funded climate venture.”</p>
+                        <strong>Maya Shrestha · BA Innovation 2022</strong>
+                        <span>CEO, Kailash Labs</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="cta-banner">
+                    <p class="text-uppercase text-muted mb-2">Applications now open</p>
+                    <h2>Join the most international classroom in Nepal.</h2>
+                    <p class="muted mb-4">Rolling admissions for Spring 2026 · Scholarships for bold ideas in tech, tourism, and entrepreneurship.</p>
+                    <a href="admissions.html" class="btn-primary">Start your application</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            <h2 class="section-title text-center mb-5">Our Featured Programs</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 program-card">
-                        <div class="card-body text-center">
-                            <div class="program-icon mb-3">
-                                <i class="fas fa-laptop-code fa-3x"></i>
-                            </div>
-                            <h3 class="card-title mb-3">BSc (Hons) Computer Systems Engineering</h3>
-                            <p class="card-text mb-4">Develop expertise in computer systems, software development, and IT infrastructure management.</p>
-                            <a href="courses.html" class="btn btn-outline-primary">Know More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 program-card">
-                        <div class="card-body text-center">
-                            <div class="program-icon mb-3">
-                                <i class="fas fa-chart-line fa-3x"></i>
-                            </div>
-                            <h3 class="card-title mb-3">BA (Hons) Business and Management</h3>
-                            <p class="card-text mb-4">Gain comprehensive knowledge in business operations, management strategies, and leadership skills.</p>
-                            <a href="courses.html" class="btn btn-outline-primary">Know More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 program-card">
-                        <div class="card-body text-center">
-                            <div class="program-icon mb-3">
-                                <i class="fas fa-hotel fa-3x"></i>
-                            </div>
-                            <h3 class="card-title mb-3">BSc (Hons) Tourism and Hospitality</h3>
-                            <p class="card-text mb-4">Prepare for a career in the global hospitality industry with practical and theoretical knowledge.</p>
-                            <a href="courses.html" class="btn btn-outline-primary">Know More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="images/students.jpg" alt="ISMT Students" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-title mb-4">Why Choose ISMT British College?</h2>
-                    <div class="feature-item d-flex mb-4">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-globe fa-2x"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4 class="mb-2">International Recognition</h4>
-                            <p class="mb-0">Earn degrees recognized worldwide through our partnerships with prestigious institutions.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item d-flex mb-4">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-users fa-2x"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4 class="mb-2">Expert Faculty</h4>
-                            <p class="mb-0">Learn from experienced educators with industry expertise and international exposure.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item d-flex mb-4">
-                        <div class="feature-icon me-3">
-                            <i class="fas fa-briefcase fa-2x"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4 class="mb-2">Career Opportunities</h4>
-                            <p class="mb-0">Access to job placements, internships, and career counseling services.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section text-white text-center py-5">
-        <div class="container">
-            <h2 class="mb-4">Ready to Start Your Educational Journey?</h2>
-            <p class="lead mb-4">Join ISMT British College and take the first step towards a successful global career.</p>
-            <a href="admissions.html" class="btn btn-light btn-lg">Apply Now</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5 class="mb-3">ISMT British College</h5>
-                    <p class="mb-4">Providing quality education and international degrees in Nepal since 2011.</p>
+                <div class="col-lg-4">
+                    <h5>ISMT British College</h5>
+                    <p>British-validated degrees, Kathmandu-born culture. We design learning experiences for makers, strategists, and storytellers.</p>
                     <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5 class="mb-3">Quick Links</h5>
+                <div class="col-lg-4">
+                    <h5>Navigate</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
-                        <li class="mb-2"><a href="courses.html" class="text-white">Courses</a></li>
-                        <li class="mb-2"><a href="admissions.html" class="text-white">Admissions</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Visit & contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="mb-3">Contact Information</h5>
-                    <address>
-                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kathmandu, Nepal</p>
-                        <p class="mb-2"><i class="fas fa-phone me-2"></i> +977 1234567890</p>
-                        <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@ismtcollege.edu.np</p>
-                    </address>
+                <div class="col-lg-4">
+                    <h5>Visit</h5>
+                    <p>Kamaladi Marg, Kathmandu 44600 · Nepal</p>
+                    <p>+977 980-1234567</p>
+                    <p>hello@ismtcollege.edu.np</p>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> ISMT British College · Crafted in Kathmandu.
             </div>
         </div>
     </footer>
-    <div class="bg-primary text-white text-center py-3">
-        <div class="container">
-            <p class="m-0">&copy; 2023 ISMT British College. All Rights Reserved.</p>
-        </div>
-    </div>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
